@@ -1,0 +1,43 @@
+.mainFooterContainer {
+  display: flex;
+  justify-content: center;
+}
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+  padding-top: 10px;
+  padding-left: 15px;
+
+  padding-bottom: 120px;
+}
+.footerLinks {
+  display: flex;
+  gap: 20px;
+}
+.footerLink {
+ 
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+.photo {
+  display: flex; /* Каждая фотография занимает треть ширины */
+  height: 40px; /* Высота каждой фотографии */
+  background-size: cover;
+  background-position: center;
+  
+  border-radius: 5px;
+}
+.photo:hover {
+  background-color: gray;
+  opacity: 0.8;
+}
+.underlinedText{
+    text-decoration: underline;
+    text-decoration-color: blue;
+}

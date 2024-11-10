@@ -1,0 +1,78 @@
+.skillsBlockContainer {
+    min-height: 100vh;
+    background-color: aliceblue;
+    padding-top: 200px;
+    
+}
+.skillsFirstText{
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family-cases);
+    color: #555;
+    font-size: 50px;
+
+}
+.title {
+    background-color: antiquewhite;
+
+}
+.skills {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    
+}
+.skillsBlock{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+.block{
+    width: 490px;
+    height: 100%;
+    font-family: var(--font-family-accent);
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 15px;
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* background-image: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.3),
+        rgba(0, 0, 0, 0.2)
+    ); */
+    
+    
+
+}
+
+h2{
+    font-family: var(--font-family-cases);
+}
+.descriptionOfBlock{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: var(--font-family-text);
+}
+.element {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+    width: 100%; /* Ширина для трех фотографий */
+    height: 90px; /* Высота для двух рядов фотографий */
+  }
+  
+  .photo {
+    display: flex; /* Каждая фотография занимает треть ширины */
+    height: 40px; /* Высота каждой фотографии */
+    background-size: cover;
+    background-position: center;
+    margin: 5px; /* Отступы между фотографиями */
+  }
+  

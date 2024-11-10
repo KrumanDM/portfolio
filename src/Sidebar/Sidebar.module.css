@@ -1,0 +1,40 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Начальная позиция за пределами экрана */
+  width: 250px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  background-image: linear-gradient(
+    120deg,
+    rgba(158, 95, 95, 0.3),
+    rgba(0, 0, 0, 0.2)
+  );
+  background-size: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: left 0.3s ease; /* Переход для анимации */
+}
+
+.sidebarOpen {
+  left: 0; /* Конечная позиция на экране */
+}
+
+.sidebarButton {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebarButton:hover {
+  background-color: #3700b3;
+}

@@ -1,0 +1,35 @@
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .list {
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    transition: bottom 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .dropdown:hover .list {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .list div {
+    padding: 5px 0;
+  }
