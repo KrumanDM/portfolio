@@ -9,7 +9,8 @@
     justify-content: center;
     font-family: var(--font-family-cases);
     color: #555;
-    font-size: 50px;
+    font-size: 70px;
+    padding-bottom: 20px;
 
 }
 .title {
@@ -41,14 +42,11 @@
     padding: 15px;
     
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    /* background-image: linear-gradient(
-        120deg,
-        rgba(255, 255, 255, 0.3),
-        rgba(0, 0, 0, 0.2)
-    ); */
-    
-    
 
+    transition: transform 0.3s ease;
+}
+.block:hover{
+    transform: scale(1.02);
 }
 
 h2{
@@ -74,5 +72,53 @@ h2{
     background-size: cover;
     background-position: center;
     margin: 5px; /* Отступы между фотографиями */
+
+    transition: transform 0.3s ease;
   }
+  .photo:hover {
+    transform: scale(1.4); /* Увеличение при наведении */
+  }
+
+
+
+  .iconWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.95);
+    background: linear-gradient(to right, #1b98f9, #025bb0);
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+  }
+  
+  .tooltip::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-bottom-color: #0373c7;
+  }
+  
+  .iconWrapper:hover .tooltip {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+  
+  
   

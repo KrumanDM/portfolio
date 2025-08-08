@@ -72,12 +72,9 @@ export const Header = () => {
           </>
         ) : (
           <div className={s.storeContainer}>
-            {/* <Clothing />
-            <Accessories />
-            <Skate /> */}
+            
             <div onClick={handleHomeClick}><Home/> </div>
             <div onClick={handleSkillsClick}><Skills/></div>
-            {/* <About/> */}
             <div onClick={handleProjectsClick}><Projects/></div>
             <div onClick={handleFooterClick}><Contact/></div>
             

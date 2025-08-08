@@ -3,7 +3,6 @@
   --font-family-accent: 'Monsterrat', sans-serif;
 }
 
-
 .headerContainer {
   /* position: fixed;
   top: 0;
@@ -20,17 +19,28 @@
   height: 72px;
   width: 100%;
   box-sizing: border-box;
-  border-bottom: 2px solid #f3f3f3;
+  
 
   padding-left: 10px;
   padding-right: 10px;
   background-color: white;
 
   
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 10px rgb(64, 224, 208);
   position: relative;
   
-  
+  animation: shine 1.5s infinite ease-in-out;
+}
+@keyframes shine {
+  0% {
+    box-shadow: 0px 0px 20px rgba(64, 224, 208, 0.7);
+  }
+  50% {
+    box-shadow: 0px 0px 25px rgba(64, 224, 208, 0.9);
+  }
+  100% {
+    box-shadow: 0px 0px 20px rgba(64, 224, 208, 0.7);
+  }
 }
 
 .storeContainer {
@@ -50,30 +60,14 @@
 
 }
 
-.logo {
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  font-size: 20px;
-  color: black;
-  text-decoration: none;
-  letter-spacing: 0.1em;
 
-  position: absolute;
-  top: 21px;
-  left: 50%;
-  transform: translate(-50%);
-}
-.profile a {
-  color: var(--text-color);
-}
 
 .search {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.busket a {
-  color: var(--text-color);
-}
+
 .sidebar {
   position: absolute;
   top: 0;

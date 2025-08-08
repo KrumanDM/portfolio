@@ -4,11 +4,11 @@
   left: -250px; /* Начальная позиция за пределами экрана */
   width: 250px;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.485);
   backdrop-filter: blur(20px);
   background-image: linear-gradient(
     120deg,
-    rgba(158, 95, 95, 0.3),
+    rgba(127, 127, 127, 0.3),
     rgba(0, 0, 0, 0.2)
   );
   background-size: 30px;
@@ -17,14 +17,25 @@
   flex-direction: column;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  transition: left 0.3s ease; /* Переход для анимации */
+  transition: left 0.3s ease;
+  
+  z-index: 9999999;
+  
+  
 }
 
 .sidebarOpen {
-  left: 0; /* Конечная позиция на экране */
+  left: 0;
 }
-
+.sidebarButtonContainer{
+  margin-top: 40px;
+  
+}
 .sidebarButton {
+  font-family: var(--font-family-cases);
+  font-size: 1rem;
+  width: 200px;
+  height: 50px;
   margin-bottom: 10px;
   padding: 10px 20px;
   background-color: #6200ea;
@@ -37,4 +48,14 @@
 
 .sidebarButton:hover {
   background-color: #3700b3;
+}
+.closeIcon{
+  width: 40px;
+  border-radius: 6px;
+  margin-left: 180px;
+  margin-top: -10px;
+  transition: background-color 0.3s ease;
+}
+.closeIcon:hover{
+  background-color: rgba(255, 255, 255, 0.486);
 }

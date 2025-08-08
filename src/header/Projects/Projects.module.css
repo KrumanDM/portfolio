@@ -7,7 +7,7 @@
     color: black;
     border: 0;
 
-    font-family: var(--font-family-accent);
+    font-family: var(--font-family-cases);
     font-size: 19px;
     font-weight:600;
   }

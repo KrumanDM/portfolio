@@ -6,7 +6,7 @@
   color: #555;
   font-size: 70px;
   padding-top: 250px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 .casesContainer {
   display: flex;
@@ -20,6 +20,7 @@
   font-size: 50px;
   font-weight: 500;
   font-family: var(--font-family-cases);
+
 }
 
 .skateShopContainer {
@@ -36,13 +37,15 @@
   padding: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
+
+  transition: transform 0.3s ease;
 }
 
-
-
+  
 
 .case:hover {
-  outline: 3px solid rgb(3, 97, 190); /* Используем outline вместо border */
+  /* outline: 3px solid rgb(3, 97, 190, 0.5); */
+  transform: scale(1.02); 
 }
 
 .recordingStudioContainer {

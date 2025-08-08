@@ -20,12 +20,9 @@
   overflow: hidden;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0, 0, 0);
-
-  
+  -webkit-transform: translate3d(0, 0, 0);  
 }
 
-/*  */
 
 .contactButton {
   padding: 17px 40px;
@@ -65,17 +62,12 @@
 .container {
     
   height:  100%;
-  
-  
   margin: 0 auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 100px;
-
   flex-wrap: wrap;
-  
 }
 .photo {
   
@@ -88,18 +80,14 @@
   border: 5px solid #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
-
   margin-bottom: 60px;
+  
 }
+
 
 .photo:hover {
   transform: scale(1.1); /* Увеличение при наведении */
 }
-
-
-
-
-
 
 .cupWrap {
   width: 500px;

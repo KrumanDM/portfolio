@@ -16,6 +16,18 @@ import vitePng from "../images/logos/vite.png"
 import s from "./Skills.module.css";
 
 function Skills() {
+
+  function TooltipIcon({ src, label }) {
+    return (
+      <div className={s.iconWrapper}>
+        <img src={src} alt={label} className={s.photo} />
+        <span className={s.tooltip}>{label}</span>
+      </div>
+    );
+  }
+  
+  
+
   return (
     <div className={s.skillsBlockContainer}>
       <AnimatedText>
@@ -27,15 +39,15 @@ function Skills() {
           <h2>Frontend</h2>
           <div className={s.descriptionOfBlock}>I'm passionate about design, animation, and interactions, always aiming to build fun websites with great user experiences.</div>
           <div className={s.element}>
-            <img src={htmlPng} alt="htmlPng" className={s.photo} />
-            <img src={cssPng} alt="cssPng" className={s.photo} />
-            <img src={jsPng} alt="jsPng" className={s.photo} />
-            <img src={tsPng} alt="tsPng" className={s.photo} />
-            <img src={reactPng} alt="reactPng" className={s.photo} />
-            <img src={reduxPng} alt="reduxPng" className={s.photo} />
+            <TooltipIcon  src={htmlPng} label="HTML" alt="htmlPng" className={s.photo} loading="lazy"/>
+            <TooltipIcon src={cssPng} label="CSS" alt="cssPng" className={s.photo} loading="lazy"/>
+            <TooltipIcon src={jsPng} label="JAVASCRIPT" alt="jsPng" className={s.photo} loading="lazy"/>
+            <TooltipIcon src={tsPng} label="TYPESCRIPT" alt="tsPng" className={s.photo} loading="lazy"/>
+            <TooltipIcon src={reactPng} label="REACT" alt="reactPng" className={s.photo} loading="lazy"/>
+            <TooltipIcon src={reduxPng} label="REDUX" alt="reduxPng" className={s.photo} loading="lazy"/>
             
-            <img src={sassPng} alt="sassPng" className={s.photo} />
-            <img src={muiPng} alt="muiPng" className={s.photo} />
+            <TooltipIcon src={sassPng}label="SAAS" alt="sassPng" className={s.photo} loading="lazy"/>
+            <TooltipIcon src={muiPng}label="MATERIAL UI" alt="muiPng" className={s.photo} loading="lazy"/>
           </div>
         </div>
         <div className={s.block}>
@@ -43,11 +55,11 @@ function Skills() {
           <div className={s.descriptionOfBlock}>And i have experience with a variety of tools and technologies that complement our frontend skills.</div>
           <div className={s.element}>
             
-            <img src={gitPng} alt="gitPng" className={s.photo} />
-            <img src={vitePng} alt="vitePng" className={s.photo} />
-            <img src={postmanPng} alt="postmanPng" className={s.photo} />
-            <img src={apiPng} alt="apiPng" className={s.photo} />
-            <img src={githubPng} alt="githubPng" className={s.photo} />
+            <TooltipIcon src={gitPng} label="GIT" alt="gitPng" className={s.photo} loading="lazy"/>
+            <TooltipIcon src={vitePng} label="VITE" alt="vitePng" className={s.photo} loading="lazy"/>
+            <TooltipIcon src={postmanPng} label="POSTMAN" alt="postmanPng" className={s.photo} loading="lazy"/>
+            <TooltipIcon src={apiPng} label="API" alt="apiPng" className={s.photo} loading="lazy"/>
+            <TooltipIcon src={githubPng} label="GITHUB" alt="githubPng" className={s.photo} loading="lazy"/>
           </div>
         </div>
       </div>
