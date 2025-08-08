@@ -1,0 +1,27 @@
+
+.customCursor {
+  width: 20px;
+  height: 20px;
+  background: url('../images/Cursor1.png') center/cover no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  display: none; /* Initially hide the custom cursor */
+  z-index: 9999999;
+  
+  
+}
+
+/* a {
+  cursor: none; 
+} */
+
+.customCursorActive {
+  display: block !important;
+}
+
+.customCursorInactive {
+  display: none;
+}

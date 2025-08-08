@@ -1,0 +1,29 @@
+.skill{
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.image{ 
+    height: 260px;
+    width: 260px;
+    background-image: url(https://bipbap.ru/wp-content/uploads/2021/11/1619541010_52-oir_mobi-p-nyashnie-kotiki-zhivotnie-krasivo-foto-57-730x856.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    
+}
+.projectTitle{
+    background-color: aliceblue;
+    width: 260px;
+}
+.description{
+    background-color: aquamarine;
+    width: 260px;
+}

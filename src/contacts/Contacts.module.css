@@ -1,0 +1,25 @@
+.worksBlock {
+    background-color: rgb(251, 139, 139);
+    height: 100vh;
+}
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    background-color: beige;
+    
+}
+.formContainer {
+    width: 280px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between
+}
+.button {
+    background-color: rgba(255, 235, 205, 0.556);
+}

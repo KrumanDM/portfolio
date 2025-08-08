@@ -1,0 +1,124 @@
+.skillsBlockContainer {
+    min-height: 100vh;
+    background-color: aliceblue;
+    padding-top: 200px;
+    
+}
+.skillsFirstText{
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family-cases);
+    color: #555;
+    font-size: 70px;
+    padding-bottom: 20px;
+
+}
+.title {
+    background-color: antiquewhite;
+
+}
+.skills {
+    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    
+}
+.skillsBlock{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+.block{
+    width: 490px;
+    height: 100%;
+    font-family: var(--font-family-accent);
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 15px;
+    
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease;
+}
+.block:hover{
+    transform: scale(1.02);
+}
+
+h2{
+    font-family: var(--font-family-cases);
+}
+.descriptionOfBlock{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: var(--font-family-text);
+}
+.element {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+    width: 100%; /* Ширина для трех фотографий */
+    height: 90px; /* Высота для двух рядов фотографий */
+  }
+  
+  .photo {
+    display: flex; /* Каждая фотография занимает треть ширины */
+    height: 40px; /* Высота каждой фотографии */
+    background-size: cover;
+    background-position: center;
+    margin: 5px; /* Отступы между фотографиями */
+
+    transition: transform 0.3s ease;
+  }
+  .photo:hover {
+    transform: scale(1.4); /* Увеличение при наведении */
+  }
+
+
+
+  .iconWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.95);
+    background: linear-gradient(to right, #1b98f9, #025bb0);
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+  }
+  
+  .tooltip::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-bottom-color: #0373c7;
+  }
+  
+  .iconWrapper:hover .tooltip {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+  }
+  
+  
+  

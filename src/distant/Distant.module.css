@@ -1,0 +1,9 @@
+.worksBlock {
+    background-color: rgb(255, 234, 202);
+     min-height:15vh;
+}
+.distantContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
