@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   background-color: aliceblue;
-  font-family: var(--font-family-cases);
+  font-family: "Orbitron", sans-serif;
   color: #555;
   font-size: 70px;
   padding-top: 250px;

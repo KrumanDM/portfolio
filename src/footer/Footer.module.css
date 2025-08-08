@@ -5,7 +5,7 @@
 .footerContainer {
   display: flex;
   flex-direction: column;
-
+  font-family: "Orbitron", sans-serif;
   gap: 15px;
   padding-top: 10px;
   padding-left: 15px;

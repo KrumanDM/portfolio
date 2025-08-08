@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Header } from "./header/Header";
 import { Main } from "./main/Main";
-import { MainColumns } from "./MainColumns/MainColumns";
 import { Footer } from "./footer/Footer";
-import { CustomCursor } from "./CustomCursor/CustomCursor";
-import { Flipper } from "./MainColumns/Flipper";
 import { Cases } from "./cases/Cases";
 import Skills from "./skills/Skills";
 import s from "./App.module.css"
@@ -46,8 +43,6 @@ const App = () => {
       )}
       <Main />
       <Skills/>
-      {/* <MainColumns /> */}
-      {/* <Flipper/> */}
       <Cases/>
       <Footer />
       
