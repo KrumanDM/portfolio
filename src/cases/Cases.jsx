@@ -8,10 +8,15 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 export const Cases = () => {
   useEffect(() => {
-    Fancybox.bind("[data-fancybox]", {
-      // Ваши настройки
+    Fancybox.bind('[data-fancybox="gallery"]', {
+      dragToClose: true,     // свайп/таск вниз — закрыть
+      animated: true,        // плавные переходы
+      compact: true          // аккуратный UI на мобильных
     });
+  
+    return () => Fancybox.destroy(); // на всякий случай чистка при анмаунте
   }, []);
+  
 
   return (
     <>
@@ -24,13 +29,13 @@ export const Cases = () => {
             href={store1}
             
             data-fancybox="gallery"
-            data-caption="Caption #1"
+            data-caption="Photo 1"
           >
             <img className={s.case} src={store1} alt="Store 1" />
           </a>
           
           
-          <a href={store2} data-fancybox="gallery" data-caption="Caption #2">
+          <a href={store2} data-fancybox="gallery" data-caption="Photo 2">
             <img className={s.case} src={store2} alt="Store 2" />
           </a>
           

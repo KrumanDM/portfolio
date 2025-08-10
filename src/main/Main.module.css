@@ -289,6 +289,37 @@
   }
 }
 
+@media (max-width: 720px) {
+  .container {
+    flex-direction: column;
+    gap: 0px;
+    padding: 20px;
+  }
+
+  .text {
+    font-size: 0px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  .photo {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 30px auto;
+    border-radius: 50%;
+  }
+
+  .contactButton {
+    margin: 20px auto;
+  }
+
+  .h1Main {
+    flex-direction: column;
+    font-size: 40px;
+    text-align: center;
+  }
+}
 
 
   

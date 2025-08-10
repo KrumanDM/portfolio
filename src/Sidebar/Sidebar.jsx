@@ -64,9 +64,11 @@ const Sidebar = () => {
 
   return (
     <div>
-      <img src={burgerButton} onClick={handleOpen}></img>
-      {isOpen && (
-        <div className={`${s.sidebar} ${isOpen ? s.sidebarOpen : ''}`} ref={sidebarRef}>
+      <img src={burgerButton} onClick={handleOpen} />
+      <div
+        className={`${s.sidebar} ${isOpen ? s.sidebarOpen : ''}`}
+        ref={sidebarRef}
+      >
         <img src={closeIcon} className={s.closeIcon} onClick={handleClose} />
         <ul className={s.sidebarButtonContainer}>
           <li><button onClick={handleHomeClick} className={s.sidebarButton}>Home</button></li>
@@ -75,9 +77,6 @@ const Sidebar = () => {
           <li><button onClick={handleFooterClick} className={s.sidebarButton}>Contacts</button></li>
         </ul>
       </div>
-      
-      
-      )}
     </div>
   );
 };

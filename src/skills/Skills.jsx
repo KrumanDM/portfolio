@@ -1,7 +1,9 @@
 import React from "react";
 import AnimatedText from "../cases/AnimatedTextCases";
 import htmlPng from "../images/logos/html.png";
-import cssPng from "../images/logos/css.png";
+// import cssPng from "../images/logos/css.png";
+
+import cssPng from "../images/logos/cssLogo2.png";
 import jsPng from "../images/logos/js.png";
 import tsPng from "../images/logos/typescript.png";
 import reactPng from "../images/logos/react.png";
@@ -14,6 +16,7 @@ import sassPng from "../images/logos/sass.png";
 import muiPng from "../images/logos/mui.png"
 import vitePng from "../images/logos/vite.png"
 import s from "./Skills.module.css";
+
 
 function Skills() {
 

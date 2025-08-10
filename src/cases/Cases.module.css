@@ -20,7 +20,6 @@
   font-size: 50px;
   font-weight: 500;
   font-family: var(--font-family-cases);
-
 }
 
 .skateShopContainer {
@@ -41,11 +40,9 @@
   transition: transform 0.3s ease;
 }
 
-  
-
 .case:hover {
   /* outline: 3px solid rgb(3, 97, 190, 0.5); */
-  transform: scale(1.02); 
+  transform: scale(1.02);
 }
 
 .recordingStudioContainer {
@@ -68,4 +65,36 @@
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   border-radius: 24px;
   transition: box-shadow 2.5s ease;
+}
+@media (max-width: 520px) {
+  .casesContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px; /* боковой отступ */
+  }
+
+  .case {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 5px; /* отступ между карточками */
+  }
+}
+
+@media (min-width: 521px) and (max-width: 767px) {
+  .case {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .case {
+    max-width: 600px;
+  }
+
+  .casesContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+  }
 }

@@ -26,10 +26,10 @@ export const Footer = () => {
           <a className={s.footerLink} href="https://t.me/stray_fall">
             <img src={telegram} alt="telegram" className={s.photo}></img>
           </a>
-          <a className={s.footerLink} href="https://t.me/stray_fall">
+          <a className={s.footerLink} href="https://www.instagram.com/stray_fall/">
             <img src={instagram} alt="instagram" className={s.photo}></img>
           </a>
-          <a className={s.footerLink} href="https://t.me/stray_fall">
+          <a className={s.footerLink} href="https://vk.com/end_for_end">
             <img src={vk} alt="vk" className={s.photo}></img>
           </a>
           <a className={s.footerLink} href="https://t.me/stray_fall">

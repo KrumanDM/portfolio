@@ -1,8 +1,5 @@
 import React from "react";
 import s from './Main.module.css';
-import styleContainer from '../common/styles/Container.module.css'
-import cupOfCoffee from '../images/cupOfCoffee.png'
-import steam from '../images/steam.png'
 
 export const Main = () => {
 
@@ -29,49 +26,7 @@ export const Main = () => {
            
         </div>
       <div className={s.photo}>
-      {/* <div className={s.cupWrap}>
-    
 
-    <div className={s.smokeWrap}>
-      <img className={s.smoke} src={steam} alt="smoke"/>
-    </div>
-    <div className={s.smokeWrap}>
-      <img className={s.smoke2} src={steam} alt="smoke"/>
-    </div>
-    <div className={s.smokeWrap}>
-      <img className={s.smoke3} src={steam} alt="smoke"/>
-    </div>
-    <div className={s.smokeWrap}>
-      <img className={s.smoke} src={steam} alt="smoke"/>
-    </div>
-    <div className={s.smokeWrap}>
-      <img className={s.smoke2} src={steam} alt="smoke"/>
-    </div>
-    <div className={s.smokeWrap}>
-      <img className={s.smoke3} src={steam} alt="smoke"/>
-    </div>
-    <div className={s.smokeWrap}>
-      <img className={s.smoke3} src={steam} alt="smoke"/>
-    </div>
-    <div className={s.smokeWrap}>
-      <img className={s.smoke3} src={steam} alt="smoke"/>
-    </div>
-    <div className={s.smokeWrap}>
-      <img className={s.smoke3} src={steam} alt="smoke"/>
-    </div>
-    <div className={s.smokeWrap}>
-      <img className={s.smoke3} src={steam} alt="smoke"/>
-    </div>
-    <div className={s.smokeWrap}>
-      <img className={s.smoke3} src={steam} alt="smoke"/>
-    </div>
-    <div className={s.smokeWrap}>
-      <img className={s.smoke3} src={steam} alt="smoke"/>
-    </div>
-    <div className={s.smokeWrap}>
-      <img className={s.smoke3} src={steam} alt="smoke"/>
-    </div>
-  </div> */}
       </div>
         </div>
       
